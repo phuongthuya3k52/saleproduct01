@@ -29,23 +29,22 @@ $stmt->execute();
 $resultSet = $stmt->fetchAll();
 ?>
 
-<!-- display the data -->
+<!-- display the data 
 <table align="center" border="1px" style="border-collapse: collapse; text-align: center;" cellspacing="3px">
      <tr>
         <th style="font-size: 20px">ProductID</th>
         <th style="font-size: 20px">Name</th>
         <th style="font-size: 20px">Price</th>
-    </tr>
+    </tr> -->
     <?php 
     foreach ($resultSet as $row) {
-    ?>
-    <tr>
+    
+    /*<!-- <tr>
         <td>$row["productid"]</td>
         <td>$row["name"]</td>
         <td>$row["price"]</td>
-    </tr>
-            <!-- echo "<li>" .$row["productid"] .'--' .$row["name"] .'--' .$row["price"] ."<li>"; -->
-    <?php
+    </tr> */
+            echo "<li>" .$row["productid"] .'--' .$row["name"] .'--' .$row["price"] ."<li>"; 
         }
     ?>
    
