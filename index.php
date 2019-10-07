@@ -30,13 +30,20 @@ $resultSet = $stmt->fetchAll();
 ?>
 
 //display the data
-<ul>
-	<?php 
-		foreach ($resultSet as $row) {
-			echo "<li>" .$row["productID"] .'--' .$row["name"] .'--' .$row["price"] ."<li>";
-		}
-	 ?>
-</ul>
+<table align="center" border="1px" style="border-collapse: collapse; text-align: center;" cellspacing="3px">
+     <tr>
+        <th style="font-size: 20px">ProductID</th>
+        <th style="font-size: 20px">Name</th>
+        <th style="font-size: 20px">Price</th>
+    </tr>
+    <tr><?php 
+        foreach ($resultSet as $row) {
+            echo "<li>" .$row["productid"] .'--' .$row["name"] .'--' .$row["price"] ."<li>";
+        }
+     ?>
+    </tr>
+	
+
 
 </body>
 </html>
