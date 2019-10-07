@@ -33,7 +33,7 @@ $resultSet = $stmt->fetchAll();
 <ul>
 	<?php 
 		foreach ($resultSet as $row) {
-			echo "<li>" .$row["studentname"] .'--' .$row["course"] ."<li>";
+			echo "<li>" .$row["productID"] .'--' .$row["name"] .'--' .$row["price"] ."<li>";
 		}
 	 ?>
 </ul>
