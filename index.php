@@ -19,7 +19,7 @@ $pdo = new PDO("pgsql:" . sprintf(
 ));
 
 // the SQL query
-$sql = "SELECT studentname,course FROM registercourse";
+$sql = "SELECT * FROM Product";
 
 //////////////
 $stmt = $pdo->prepare($sql);
