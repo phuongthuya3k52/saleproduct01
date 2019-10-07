@@ -43,7 +43,7 @@ $resultSet = $stmt->fetchAll();
         <td>" .$row["productid"] ."</td>
         <td>" .$row["name"] ."</td>
         <td>" .$row["price"] ."</td>
-    </tr>"
+    </tr>";
         // echo "<li>" .$row["productid"] .'--' .$row["name"] .'--' .$row["price"] ."<li>"; -->
         }
     ?>
