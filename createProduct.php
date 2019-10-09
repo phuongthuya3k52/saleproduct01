@@ -4,7 +4,7 @@
 	<title>Create Product</title>
 </head>
 <body>
-<form method="post" action="doCreateProduct">
+<form method="post" action="doCreateProduct.php">
 	<h1>Add new product</h1>
 	<table>
 		<tr>
