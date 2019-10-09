@@ -23,11 +23,11 @@
 		    'name' => $name,
 		    'price' => $price,
 		];
-		$stmt =  $pdo->prepare("INSERT INTO product(name, price) VALUES (:name,:price)");	
+		$stmt =  $pdo->prepare("INSERT INTO Product(name,price) VALUES (:name,:price)");	
 		$stmt->execute($data);
 
 	 ?>
-	 <h2>You have added <?php echo $name?>  product sucessfully!</h2>
+	 <h2>You have added <?php echo $name?> product sucessfully!</h2>
 	<!--  <ul>
 	 	<li><?php echo $birthday?></li>
 	 	<li><?php echo $gender?></li>

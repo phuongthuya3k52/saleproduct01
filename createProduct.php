@@ -5,6 +5,7 @@
 </head>
 <body>
 <form method="post" action="doCreateProduct">
+	<h1>Add new product</h1>
 	<table>
 		<tr>
 			<td>Name</td>
